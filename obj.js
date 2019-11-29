@@ -49,17 +49,22 @@ texture(img);
 }
 
 function mousePressed(){
+  if (windowWidth>600){
     let r=random(1,4);
     let b=new Bubble(mouseX-width/2,mouseY-height/2,r);
     
     bubbles.push(b);
+  }
 }
 
 function touchEnded(){
+    if (windowWidth<600){
+
   let r=random(1,4);
   let b=new Bubble(mouseX - width/2, mouseY - height/2,r);
   
   bubbles.push(b);
+    }
 }
 
 class Bubble{
