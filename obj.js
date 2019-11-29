@@ -68,8 +68,6 @@ function touchEnded(){
   }
 }
 
-
-
 class Bubble{
     constructor(x,y,r){
         this.x=x;
