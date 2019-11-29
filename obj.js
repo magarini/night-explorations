@@ -23,8 +23,10 @@ push();
   rotateY(frameCount * 0.1);
   
   rotateZ(frameCount * 0.1);
+
 scale(20)
 
+//   rotateY(0.5);
 translate(0,0,0)
 texture(img);
 
@@ -42,7 +44,7 @@ texture(img);
     fill(255);
     stroke(255);
     push();
-  translate(mouseX-width/2,mouseY-height/2) ;
+  translate(mouseX - width/2, mouseY - height/2) ;
   sphere(3);
   pop();
 
@@ -51,21 +53,22 @@ texture(img);
 function mousePressed(){
   if (windowWidth>600){
     let r=random(1,4);
-    let b=new Bubble(mouseX-width/2,mouseY-height/2,r);
+    let b=new Bubble(mouseX - width/2, mouseY - height/2,r);
     
     bubbles.push(b);
   }
 }
 
 function touchEnded(){
-    if (windowWidth<600){
-
+  if (windowWidth<600){
   let r=random(1,4);
   let b=new Bubble(mouseX - width/2, mouseY - height/2,r);
   
   bubbles.push(b);
-    }
+  }
 }
+
+
 
 class Bubble{
     constructor(x,y,r){
@@ -90,8 +93,4 @@ class Bubble{
   directionalLight(6, 76, 104,this.x, this.y, 0);
   pop();
     }
-
-   
-    }
-
-
+  }
