@@ -2,13 +2,16 @@ let teapot;
 let bubbles=[];
 let bubble
 let lights=[];
-
+let j=0;
 var canvas;
-
+let mySound;
 function preload() {
   // Load model with normalise parameter set to true
   teapot = loadModel('data/Tree.obj', true);
   img = loadImage('data/DB2X2_L01.png');
+
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('midingth explorations.mp3');
 }
 
 function setup() {
@@ -51,12 +54,18 @@ texture(img);
 }
 
 function mousePressed(){
+  j=j+1;
+  if (j<2){
+  mySound.setVolume(0.4);
+  mySound.loop();
+}
   if (windowWidth>600){
     let r=random(1,4);
     let b=new Bubble(mouseX - width/2, mouseY - height/2,r);
     
     bubbles.push(b);
   }
+
 }
 
 function touchEnded(){
@@ -92,3 +101,5 @@ class Bubble{
   pop();
     }
   }
+
+ 
