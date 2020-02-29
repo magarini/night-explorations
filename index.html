@@ -10,25 +10,27 @@
     <script src="p5.sound.min.js"></script>
     <script src="obj.js"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+        canvas{
+            border:2px solid;
+            cursor:grab;
+           
+        }
         body{
+            background:black;
             margin:0;
             padding:0;
-            background:black;
             color:white;
             font-family:monospace;
         }
-        canvas{
-             margin-top:-30px;
-        }
+       
         
-        iframe{
-            margin:0;
-        }
+     
         .container{
             display:flex;
             align-items:center;
             width:100%;
-            border:solid;
+            border:1px solid;
             
         }
         img{
@@ -50,37 +52,63 @@
            width:100%;
             
         }
+        h2{
+            margin:0 20px;
+            padding:10px 50px;
+            display:block;
+           text-align:right;
+           align-self: top;
+           border-left:solid;
+           font-weight:lighter;
+           font-size:15pt;
+           width:100%;
+        }
+        
+      
         a{
             text-decoration:none;
             color:white;
         }
+        a:hover{
+            text-decoration:dotted;
+        }
 
         @media screen and (max-width: 600px) {
         h1{
+        font-size:20px;
+        width:100%;
+        padding:20px;
+        }
+        h2{
         font-size:15px;
         width:100%;
         padding:20px;
         }
 
         }
+img:hover{
+    transform:scale(1.2);
+    cursor:grab;
+}
+strong{
+    font-style: italic;
+}
 
- 
+p{
+    color:white;
+}
 
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="earwhite.png" >
-        <iframe width="50" height="50"
-        src="https://www.youtube.com/embed/g1w3IT5WnYw?autoplay=1">
-        </iframe>
         <h1><a href="https://magarini.github.io/night-explorations/">☽ midnight explorations</a></h1>
 
     </div>
-    <canvas>
-        
-    </canvas>
+    <div class="container">
+        <h2><strong>the bedroom gate</strong> | <a href="https://magarini.github.io/theDebris/">next adventure ></a></h2>
     
+    </div>
 </body>
 </html>
