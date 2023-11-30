@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+body{
+     /* border:2px solid; */
+     cursor:grab;
+     overflow-x:hidden;
+}
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+ canvas{
+     /* border:2px solid; */
+     cursor:grab;
+     width: 100dvw !important;
+    
+ }
+ body{
+    background:black;
+    margin:0;
+     padding:0;
+     color:white;
+     font-family:monospace;
+ }
+
+ 
+
+ .container{
+     display:flex;
+     align-items:center;
+     width:100%;
+     border-bottom:1px solid;
+     
+ }
+ img{
+     width:50px;
+     height:50px;
+     margin:0 10px;
+
+ }
+ h1{
+     color:white;
+     margin:20px;
+     display:block;
+    text-align:right;
+    align-self: top;
+    font-weight:lighter;
+    font-size:20pt;
+    width:100%;
+     
+ }
+ 
+ h2{
+     margin:0;
+     padding:10px 20px;
+     display:block;
+    text-align:right;
+    align-self: top;
+   
+    font-weight:lighter;
+    font-size:15pt;
+    width:100%;
+ }
+ 
+
+ a{
+     text-decoration:none;
+     color:white;
+ }
+ a:hover{
+     text-decoration:dotted;
+ }
+
+ @media screen and (max-width: 600px) {
+ h1{
+ font-size:20px;
+ width:100%;
+ padding:20px 0;
+ }
+ h2{
+ font-size:15px;
+ width:100%;
+ /* padding:20px 0; */
+ }
+
+ }
+img:hover{
+transform:scale(1.2);
+cursor:grab;
+}
+strong{
+font-style: italic;
+}
+
+p{
+color:white;
+}
